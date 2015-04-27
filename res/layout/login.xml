@@ -71,8 +71,21 @@
   	        android:id="@+id/register_link"
   	        android:layout_width="wrap_content"
   	        android:layout_height="wrap_content"
-  	        android:layout_marginLeft="15dp"
+  	        android:layout_alignParentLeft="true"
+  	        android:layout_alignParentTop="true"
+  	        android:layout_marginLeft="16dp"
   	        android:text="@string/login_register_link"
+  	        android:textColor="#888"
+  	        android:textColorLink="#FF0066CC" />
+
+  	    <TextView
+  	        android:id="@+id/find_pwd"
+  	        android:layout_width="wrap_content"
+  	        android:layout_height="wrap_content"
+  	        android:layout_alignParentRight="true"
+  	        android:layout_alignParentTop="true"
+  	        android:layout_marginRight="16dp"
+  	        android:text="@string/login_find_pwd"
   	        android:textColor="#888"
   	        android:textColorLink="#FF0066CC" />
 

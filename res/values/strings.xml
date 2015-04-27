@@ -11,7 +11,7 @@
     <string name="login_status_logging_in">登录中...</string>  
     <string name="login_username_hint">Email或手机号</string>  
     <string name="login_register_link">没有帐号？ <a href="#" mce_href="#">注册</a></string>  
-
+	<string name="login_find_pwd">忘记密码？ <a href="#" mce_href="#">找回</a></string>
 	<string name="title">停车</string>
 	
 	<string name="reg_username_hint">请输入手机号码</string>
@@ -24,4 +24,5 @@
     <string name="reg_label_pwdconfirm">密码确认</string>
     <string name="reg_label_telconfirm">手机验证</string>
 	
+	<string name="find_label_telconfirm">该手机号是您注册时填写的手机号码，用于确认您的身份,保障账户安全</string>
 </resources>

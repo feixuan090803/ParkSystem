@@ -24,7 +24,7 @@ public class LoginActivity extends Activity {
 	
 	EditText etName,etPass;
 	Button bnLogin;
-	TextView txReg;
+	TextView txReg,txFindPwd;
 	
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -38,6 +38,9 @@ public class LoginActivity extends Activity {
         
         //获取注册选择项
         txReg=(TextView)findViewById(R.id.register_link);
+        
+        //获取找回密码选择项
+        txFindPwd=(TextView)findViewById(R.id.find_pwd);
         
         //获取界面中登录按钮
         bnLogin=(Button)findViewById(R.id.signin_button);
@@ -70,7 +73,7 @@ public class LoginActivity extends Activity {
         txReg.setOnClickListener(new OnClickListener() {
 			
 			@Override
-			public void onClick(View arg0) 
+			public void onClick(View v) 
 			{
 				// 转至注册窗口
 				Intent intent=new Intent(LoginActivity.this,Register.class);
@@ -82,6 +85,20 @@ public class LoginActivity extends Activity {
 			}
 		});
         
+        //为找回密码选择项绑定事件监听器
+        txFindPwd.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// 转至找回密码窗口
+				// 转至注册窗口
+				Intent intent=new Intent(LoginActivity.this,FindPwd.class);
+				startActivity(intent);
+				
+				//结束该Activity
+				finish();
+			}
+		});
     }
     
   //信息校验

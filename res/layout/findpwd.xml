@@ -12,7 +12,7 @@
         android:orientation="horizontal" >
     
 		<TextView
-		    android:id="@+id/title_return"
+		    android:id="@+id/find_title_return"
 		    android:layout_width="wrap_content"
 		    android:layout_height="38dp"
 		    android:background="@drawable/background_title"
@@ -25,96 +25,54 @@
 		    android:gravity="right" >
 
 		    <TextView
-		        android:id="@+id/title"
+		        android:id="@+id/find_title"
 		        android:layout_width="match_parent"
 		        android:layout_height="38dp"
 		        android:background="@drawable/background_title"
 		        android:gravity="center"
-		        android:text="新用户注册"
+		        android:text="找回密码"
 		        android:textSize="15dp" />
 		</LinearLayout>
 
     </LinearLayout>
     
-    <!-- 账号 -->
-
-    <TextView
-        android:id="@+id/reg_username_label"
-        style="@style/normalText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:layout_marginLeft="@dimen/label_margin_left"
-        android:text="@string/reg_label_username" />
+    
+     <!-- 输入进行密码修改的手机号 -->
 
     <EditText
-        android:id="@+id/reg_username_edit"
+        android:id="@+id/find_username_edit"
         android:layout_width="304dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/edit_margin_left"
+        android:layout_marginLeft="@dimen/label_margin_left"
         android:hint="@string/reg_username_hint"
         android:inputType="text"
-        android:singleLine="true" />
-
-    <!-- 密码 text -->
-
+        android:singleLine="true" 
+        android:layout_marginTop="10dp"
+       />
+    
     <TextView
-        android:id="@+id/reg_password_label"
+        android:id="@+id/find_numconfirm_label"
         style="@style/normalText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/label_margin_left"
-        android:layout_marginTop="3dp"
-        android:text="@string/reg_label_password" />
-
-    <EditText
-        android:id="@+id/reg_password_edit"
-        android:layout_width="304dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/edit_margin_left"
-        android:hint="@string/reg_pwd_hint"
-        android:inputType="textPassword"
-        android:singleLine="true" />
-
-    <!-- 密码确认 text -->
-
-    <TextView
-        android:id="@+id/reg__pwdconfirm_label"
-        style="@style/normalText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/label_margin_left"
-        android:layout_marginTop="3dp"
-        android:text="@string/reg_label_pwdconfirm" />
-
-    <EditText
-        android:id="@+id/reg_pwdconfirm_edit"
-        android:layout_width="304dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/edit_margin_left"
-        android:hint="@string/reg_pwdconfirm_hint"
-        android:inputType="textPassword"
-        android:singleLine="true" />
-
+        android:text="@string/find_label_telconfirm" 
+   		android:layout_marginLeft="10dp"
+   		android:layout_marginRight="16dp"
+   		android:textColor="#95a5a6"
+   		/>
+    
+    
     <!-- 手机验证 text -->
 
-    <TextView
-        android:id="@+id/reg_numconfirm_label"
-        style="@style/normalText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/label_margin_left"
-        android:layout_marginTop="3dp"
-        android:text="@string/reg_label_telconfirm" />
-
-<LinearLayout
+	<LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/background_white"
-        android:orientation="horizontal" >
-
+        android:orientation="horizontal"
+		android:layout_marginTop="10dp" >
+		
         <EditText
-            android:id="@+id/reg_numconfirm_edit"
+            android:id="@+id/find_numconfirm_edit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/edit_margin_left"
@@ -122,18 +80,60 @@
             android:singleLine="true" />
 
         <Button
-            android:id="@+id/receive_confirm_num"
+            android:id="@+id/find_confirm_num"
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            
             android:layout_marginLeft="@dimen/label2_font_size"
             android:gravity="center"
             android:text="获取验证码" />
 </LinearLayout>
+    
+	
+    <!-- 密码 text -->
 
-        <Button
-            android:id="@+id/confirm_register"
+    <TextView
+        android:id="@+id/find_password_label"
+        style="@style/normalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_marginLeft="@dimen/label_margin_left"
+        android:layout_marginTop="3dp"
+        android:text="新密码" />
+
+    <EditText
+        android:id="@+id/find_password_edit"
+        android:layout_width="304dp"
+        android:layout_height="wrap_content"
+         android:layout_marginLeft="@dimen/edit_margin_left"
+        android:hint="@string/reg_pwd_hint"
+        android:inputType="textPassword"
+        android:singleLine="true" />
+
+    <!-- 密码确认 text -->
+
+    <TextView
+        android:id="@+id/find__pwdconfirm_label"
+        style="@style/normalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_marginLeft="@dimen/label_margin_left"
+        android:layout_marginTop="3dp"
+        android:text="密码确认" />
+
+    <EditText
+        android:id="@+id/find_pwdconfirm_edit"
+        android:layout_width="304dp"
+        android:layout_height="wrap_content"
+         android:layout_marginLeft="@dimen/edit_margin_left"
+        android:hint="@string/reg_pwdconfirm_hint"
+        android:inputType="textPassword"
+        android:singleLine="true" />
+
+    
+
+	<Button
+            android:id="@+id/find_confirm_register"
             style="?android:attr/buttonStyleSmall"
             android:layout_width="fill_parent"
             android:layout_height="30dp"
@@ -141,7 +141,7 @@
             android:layout_marginRight="20dp"
             android:layout_marginTop="8dp"
             android:gravity="center"
-            android:text="确认注册" 
+            android:text="确认修改" 
             android:background="@drawable/background_title"
  
             />

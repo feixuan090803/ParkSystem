@@ -16,6 +16,7 @@ import android.webkit.WebView.FindListener;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
+//Ê×Ò³
 public class FragmentPage1 extends Fragment
 {
 	@Override
