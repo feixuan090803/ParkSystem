@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>    
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="@drawable/background_white"
+	>
+
+<!-- 定义一个ImageView，用于作为列表项的一部分。 -->
+<ImageView 
+    android:id="@+id/header"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content" 
+	android:layout_centerHorizontal="true"
+	android:layout_centerVertical="true"
+	android:paddingLeft="10dp"
+	/>
+
+<LinearLayout 
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="@drawable/background_white"
+	>
+
+<!-- 定义一个TextView，用于作为列表项的一部分。 -->
+<TextView 
+    android:id="@+id/name"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content"
+	android:layout_centerHorizontal="true"
+	android:textSize="20dp"
+	android:textColor="#34495e"
+	android:gravity="center_vertical"
+	android:paddingLeft="10dp"
+	android:background="@drawable/background_white"
+	/>
+
+<!-- 定义一个TextView，用于描述列表项 -->
+<TextView android:id="@+id/desc"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content"
+	android:layout_centerHorizontal="true"
+	android:textSize="14dp"
+	android:gravity="center_vertical"
+	android:paddingLeft="10dp"
+	android:background="@drawable/background_white"
+	/>	
+
+</LinearLayout>
+</LinearLayout>  

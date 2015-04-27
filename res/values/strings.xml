@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">道路停车系统</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="hello">Hello World, LoginActivity!</string>  
+    <string name="login_label_username">帐号</string>  
+    <string name="login_label_password">密码</string>  
+    <string name="login_label_signin">登 录</string>  
+    <string name="login_status_logging_in">登录中...</string>  
+    <string name="login_username_hint">Email或手机号</string>  
+    <string name="login_register_link">没有帐号？ <a href="#" mce_href="#">注册</a></string>  
+
+	<string name="title">停车</string>
+	
+	<string name="reg_username_hint">请输入手机号码</string>
+	<string name="reg_pwd_hint">位数不少于六位</string>
+	<string name="reg_pwdconfirm_hint">请再次输入密码</string>
+	<string name="reg_numconfirm_hint">请输入收到的验证码</string>
+	
+	<string name="reg_label_username">账号注册</string>  
+    <string name="reg_label_password">密码设置</string>
+    <string name="reg_label_pwdconfirm">密码确认</string>
+    <string name="reg_label_telconfirm">手机验证</string>
+	
+</resources>

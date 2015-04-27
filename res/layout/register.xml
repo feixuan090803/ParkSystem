@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="38dp"
+        android:background="@drawable/background_title"
+        android:orientation="horizontal" >
+    
+		<TextView
+		    android:id="@+id/title_return"
+		    android:layout_width="wrap_content"
+		    android:layout_height="38dp"
+		    android:background="@drawable/background_title"
+		    android:gravity="center"
+		    android:text="  &lt;  " />
+	    
+		<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="38dp"
+		    android:gravity="right" >
+
+		    <TextView
+		        android:id="@+id/title"
+		        android:layout_width="match_parent"
+		        android:layout_height="38dp"
+		        android:background="@drawable/background_title"
+		        android:gravity="center"
+		        android:text="新用户注册"
+		        android:textSize="15dp" />
+		</LinearLayout>
+
+    </LinearLayout>
+    
+    <!-- 账号 -->
+
+    <TextView
+        android:id="@+id/reg_username_label"
+        style="@style/normalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/reg_label_username" />
+
+    <EditText
+        android:id="@+id/reg_username_edit"
+        android:layout_width="304dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_user_input"
+        android:hint="@string/reg_username_hint"
+        android:inputType="text"
+        android:singleLine="true" />
+
+    <!-- 密码 text -->
+
+    <TextView
+        android:id="@+id/reg_password_label"
+        style="@style/normalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username_edit"
+        android:layout_marginTop="3dp"
+        android:text="@string/reg_label_password" />
+
+    <EditText
+        android:id="@+id/reg_password_edit"
+        android:layout_width="304dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_password_input"
+        android:hint="@string/reg_pwd_hint"
+        android:inputType="textPassword"
+        android:singleLine="true" />
+
+    <!-- 密码确认 text -->
+
+    <TextView
+        android:id="@+id/reg__pwdconfirm_label"
+        style="@style/normalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username_edit"
+        android:layout_marginTop="3dp"
+        android:text="@string/reg_label_pwdconfirm" />
+
+    <EditText
+        android:id="@+id/reg_pwdconfirm_edit"
+        android:layout_width="304dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_password_input"
+        android:hint="@string/reg_pwdconfirm_hint"
+        android:inputType="textPassword"
+        android:singleLine="true" />
+
+    <!-- 手机验证 text -->
+
+    <TextView
+        android:id="@+id/reg_numconfirm_label"
+        style="@style/normalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username_edit"
+        android:layout_marginTop="3dp"
+        android:text="@string/reg_label_telconfirm" />
+
+<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_white"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/reg_numconfirm_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_password_input"
+            android:hint="@string/reg_numconfirm_hint"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/receive_confirm_num"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/label2_font_size"
+            android:gravity="center"
+            android:text="点击获取" />
+</LinearLayout>
+
+        <Button
+            android:id="@+id/confirm_register"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="@dimen/label2_font_size"
+            android:layout_marginRight="@dimen/label2_font_size"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:text="确认注册" 
+            android:background="@drawable/background_title"
+ 
+            />
+    
+</LinearLayout>
