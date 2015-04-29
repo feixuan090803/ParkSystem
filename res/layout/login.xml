@@ -31,7 +31,7 @@
     		android:hint="@string/login_username_hint"
     		android:layout_below="@id/login_user_input"
     		android:singleLine="true"
-    		android:inputType="text"/>
+    		android:inputType="phone"/>
       <!-- 密码 text -->
       <TextView 
       	android:id="@+id/login_password_input"

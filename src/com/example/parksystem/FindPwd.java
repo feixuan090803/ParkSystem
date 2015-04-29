@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 public class FindPwd extends Activity{
 	Button btnConfirmNum,btnConfirmReg;
-	EditText etRegName,etRegPass,etRegConfirmPass,etRegConfirmNum;
+	EditText etFindName,etFindPass,etFindConfirmPass,etFindConfirmNum;
 	TextView tvReturn;
 	
 	@Override
@@ -31,16 +31,16 @@ public class FindPwd extends Activity{
         
         
         //绑定 要修改密码的手机号 编辑框
-        etRegName=(EditText)findViewById(R.id.find_username_edit);
+        etFindName=(EditText)findViewById(R.id.find_username_edit);
         
         //绑定 手机验证码 编辑框
-        etRegConfirmNum=(EditText)findViewById(R.id.find_numconfirm_edit);
+        etFindConfirmNum=(EditText)findViewById(R.id.find_numconfirm_edit);
         
         //绑定新设置密码编辑框
-        etRegPass=(EditText)findViewById(R.id.find_password_edit);
+        etFindPass=(EditText)findViewById(R.id.find_password_edit);
         
         //绑定密码验证编辑框
-        etRegConfirmPass=(EditText)findViewById(R.id.find_pwdconfirm_edit);
+        etFindConfirmPass=(EditText)findViewById(R.id.find_pwdconfirm_edit);
         
         //绑定返回登陆界面按钮
         tvReturn=(TextView)findViewById(R.id.find_title_return);
@@ -60,6 +60,7 @@ public class FindPwd extends Activity{
 					
 					//结束该Activity
 					finish();
+					overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right);
 				}
 			}			
 		});
@@ -74,6 +75,7 @@ public class FindPwd extends Activity{
 				startActivity(intent);
 				
 				finish();
+				overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right);
 			}
 		});
    	}
@@ -81,46 +83,53 @@ public class FindPwd extends Activity{
 	//信息校验
 	private boolean validate() {
 		// TODO Auto-generated method stub
-		String username=etRegName.getText().toString().trim();
+		String username=etFindName.getText().toString().trim();
 		if(username.equals(""))
 		{
 			DialogUtil.showDialog(this, "用户手机号是必填项！", false);
+			
+			GetFoucus(etFindName);
 			return false;
 		}
 		
 		if(!isNumeric(username))
 		{
 			DialogUtil.showDialog(this, "请输入有效手机号！", false);
-			etRegName.setText("");
+			etFindName.setText("");
 			return false;
 		}
 		
 		
-		String pwd1=etRegPass.getText().toString().trim();
+		String pwd1=etFindPass.getText().toString().trim();
 		if(pwd1.equals(""))
 		{
 			DialogUtil.showDialog(this, "新口令设置 是必填项！", false);
+			
+			GetFoucus(etFindPass);
 			return false;
 		}
 		
-		String pwd2=etRegConfirmPass.getText().toString().trim();
+		String pwd2=etFindConfirmPass.getText().toString().trim();
 		if(pwd2.equals(""))
 		{
 			DialogUtil.showDialog(this, "口令确认是必填项！", false);
+			
+			GetFoucus(etFindConfirmPass);
 			return false;
 		}
 		
 		if(!pwd1.equals(pwd2))
 		{
 			DialogUtil.showDialog(this, "确认密码错误，请重新输入！", false);
-			etRegConfirmPass.setText("");
+			etFindConfirmPass.setText("");
 			return false;
 		}
 		
-		String code=etRegConfirmNum.getText().toString().trim();
+		String code=etFindConfirmNum.getText().toString().trim();
 		if(code.equals(""))
 		{
 			DialogUtil.showDialog(this, "手机验证码是必填项！", false);
+			GetFoucus(etFindConfirmNum);
 			return false;
 		}
 		
@@ -137,5 +146,14 @@ public class FindPwd extends Activity{
 			}
 		}
 		return true;
+	}
+	
+	//使编辑框重获焦点
+	public void GetFoucus(EditText et)
+	{
+		et.setFocusable(true);
+		et.setFocusableInTouchMode(true);
+		et.requestFocus();
+		et.findFocus();
 	}
 }

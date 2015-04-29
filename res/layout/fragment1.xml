@@ -11,9 +11,10 @@
     android:id="@+id/header"
 	android:layout_width="wrap_content"
 	android:layout_height="wrap_content" 
-	android:layout_centerHorizontal="true"
-	android:layout_centerVertical="true"
+	android:adjustViewBounds="false"
 	android:paddingLeft="10dp"
+	android:paddingTop="4dp"
+	android:paddingBottom="3dp"
 	/>
 
 <LinearLayout 
@@ -28,9 +29,8 @@
     android:id="@+id/name"
 	android:layout_width="wrap_content" 
 	android:layout_height="wrap_content"
-	android:layout_centerHorizontal="true"
-	android:textSize="20dp"
 	android:textColor="#34495e"
+	android:textSize="20sp"
 	android:gravity="center_vertical"
 	android:paddingLeft="10dp"
 	android:background="@drawable/background_white"
@@ -40,11 +40,10 @@
 <TextView android:id="@+id/desc"
 	android:layout_width="wrap_content" 
 	android:layout_height="wrap_content"
-	android:layout_centerHorizontal="true"
-	android:textSize="14dp"
 	android:gravity="center_vertical"
 	android:paddingLeft="10dp"
 	android:background="@drawable/background_white"
+	android:textSize="10sp"
 	/>	
 
 </LinearLayout>

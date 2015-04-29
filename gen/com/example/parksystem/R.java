@@ -20,12 +20,14 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
     }
     public static final class color {
         public static final int black_overlay=0x7f040000;
+        public static final int red=0x7f040001;
     }
     public static final class dimen {
         public static final int edit_margin_left=0x7f050005;
         public static final int label2_font_size=0x7f050001;
         public static final int label_font_size=0x7f050000;
         public static final int label_margin_left=0x7f050004;
+        public static final int parknum_edit_size=0x7f050006;
         public static final int sub_title_margin=0x7f050003;
         public static final int title_padding=0x7f050002;
     }
@@ -60,7 +62,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int park=0x7f02001b;
     }
     public static final class id {
-        public static final int action_forgot_password=0x7f09002d;
+        public static final int action_forgot_password=0x7f09003e;
         public static final int confirm_register=0x7f09002a;
         public static final int desc=0x7f090014;
         public static final int email=0x7f090003;
@@ -77,6 +79,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int find_title_return=0x7f090007;
         public static final int find_username_edit=0x7f090009;
         public static final int header=0x7f090012;
+        public static final int hour_pv=0x7f090034;
+        public static final int hour_tv=0x7f090035;
         public static final int imageview=0x7f09002b;
         public static final int login=0x7f090005;
         public static final int login_div=0x7f090017;
@@ -85,8 +89,23 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int login_status=0x7f090000;
         public static final int login_status_message=0x7f090001;
         public static final int login_user_input=0x7f090018;
+        public static final int minute_pv=0x7f090036;
+        public static final int minute_tv=0x7f090037;
         public static final int mylist=0x7f090016;
         public static final int name=0x7f090013;
+        public static final int park_confirm=0x7f09003d;
+        public static final int park_pay_label=0x7f09003a;
+        public static final int park_time_label=0x7f090033;
+        public static final int park_time_label2=0x7f090038;
+        public static final int park_time_select=0x7f090039;
+        public static final int park_to_leave=0x7f09003c;
+        public static final int park_to_pay=0x7f09003b;
+        public static final int parknum_1=0x7f09002d;
+        public static final int parknum_2=0x7f09002e;
+        public static final int parknum_3=0x7f09002f;
+        public static final int parknum_4=0x7f090030;
+        public static final int parknum_5=0x7f090031;
+        public static final int parknum_6=0x7f090032;
         public static final int password=0x7f090004;
         public static final int password_edit=0x7f09001b;
         public static final int realtabcontent=0x7f09001f;
@@ -123,35 +142,40 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int register=0x7f03000c;
         public static final int selector_tab_background=0x7f03000d;
         public static final int tab_item_view=0x7f03000e;
+        public static final int topark=0x7f03000f;
     }
     public static final class menu {
         public static final int login=0x7f080000;
     }
     public static final class string {
-        public static final int action_forgot_password=0x7f06001a;
-        public static final int action_sign_in_register=0x7f060018;
-        public static final int action_sign_in_short=0x7f060019;
+        public static final int action_forgot_password=0x7f06001e;
+        public static final int action_sign_in_register=0x7f06001c;
+        public static final int action_sign_in_short=0x7f06001d;
         public static final int app_name=0x7f060000;
         public static final int dummy_button=0x7f060001;
         public static final int dummy_content=0x7f060002;
-        public static final int error_field_required=0x7f06001f;
-        public static final int error_incorrect_password=0x7f06001e;
-        public static final int error_invalid_email=0x7f06001c;
-        public static final int error_invalid_password=0x7f06001d;
-        public static final int find_label_telconfirm=0x7f060014;
+        public static final int error_field_required=0x7f060023;
+        public static final int error_incorrect_password=0x7f060022;
+        public static final int error_invalid_email=0x7f060020;
+        public static final int error_invalid_password=0x7f060021;
+        public static final int find_label_telconfirm=0x7f060017;
         public static final int hello=0x7f060003;
+        public static final int label_spacing=0x7f060018;
         public static final int login_find_pwd=0x7f06000a;
         public static final int login_label_password=0x7f060005;
         public static final int login_label_signin=0x7f060006;
         public static final int login_label_username=0x7f060004;
-        public static final int login_progress_signing_in=0x7f06001b;
+        public static final int login_progress_signing_in=0x7f06001f;
         public static final int login_register_link=0x7f060009;
         public static final int login_status_logging_in=0x7f060007;
         public static final int login_username_hint=0x7f060008;
+        public static final int park_label=0x7f060016;
+        public static final int park_num=0x7f060015;
+        public static final int park_time=0x7f060014;
         /**  Strings related to login 
          */
-        public static final int prompt_email=0x7f060016;
-        public static final int prompt_password=0x7f060017;
+        public static final int prompt_email=0x7f06001a;
+        public static final int prompt_password=0x7f06001b;
         public static final int reg_label_password=0x7f060011;
         public static final int reg_label_pwdconfirm=0x7f060012;
         public static final int reg_label_telconfirm=0x7f060013;
@@ -161,7 +185,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int reg_pwdconfirm_hint=0x7f06000e;
         public static final int reg_username_hint=0x7f06000c;
         public static final int title=0x7f06000b;
-        public static final int title_activity_login=0x7f060015;
+        public static final int title_activity_login=0x7f060019;
     }
     public static final class style {
         /** 

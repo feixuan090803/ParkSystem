@@ -15,9 +15,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.Window;
+import android.widget.AnalogClock;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.R.anim;
 
 //Download by http://www.codefans.net
 public class LoginActivity extends Activity {
@@ -61,6 +63,7 @@ public class LoginActivity extends Activity {
 						
 						//结束该Activity
 						finish();
+						         
 					}
 					else {
 						DialogUtil.showDialog(LoginActivity.this,"用户名或者密码错误，请重新输入！",false);	
@@ -82,6 +85,8 @@ public class LoginActivity extends Activity {
 				//结束该Activity
 				finish();
 				
+				//由左至右切换效果
+				overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right); 
 			}
 		});
         
@@ -97,6 +102,7 @@ public class LoginActivity extends Activity {
 				
 				//结束该Activity
 				finish();
+				overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right); 
 			}
 		});
     }

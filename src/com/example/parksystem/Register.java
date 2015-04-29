@@ -61,6 +61,7 @@ public class Register extends Activity
 					
 					//结束该Activity
 					finish();
+					overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right);
 				}
 			}			
 		});
@@ -75,6 +76,7 @@ public class Register extends Activity
 				startActivity(intent);
 				
 				finish();
+				overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right);
 			}
 		});
    	}
@@ -86,6 +88,10 @@ public class Register extends Activity
 		if(username.equals(""))
 		{
 			DialogUtil.showDialog(this, "注册账户是必填项！", false);
+			
+			//获取焦点
+			GetFoucus(etRegName);
+			
 			return false;
 		}
 		
@@ -101,6 +107,9 @@ public class Register extends Activity
 		if(pwd1.equals(""))
 		{
 			DialogUtil.showDialog(this, "用户口令是必填项！", false);
+			
+			GetFoucus(etRegPass);
+			
 			return false;
 		}
 		
@@ -108,6 +117,8 @@ public class Register extends Activity
 		if(pwd2.equals(""))
 		{
 			DialogUtil.showDialog(this, "确认口令是必填项！", false);
+			
+			GetFoucus(etRegConfirmPass);
 			return false;
 		}
 		
@@ -122,12 +133,15 @@ public class Register extends Activity
 		if(code.equals(""))
 		{
 			DialogUtil.showDialog(this, "手机验证码是必填项！", false);
+			
+			GetFoucus(etRegConfirmNum);
 			return false;
 		}
 		
 		return true;
 	}
 	
+	//判断字符串是否全为数字
 	public static boolean isNumeric(String str)
 	{
 		for (int i = str.length();--i>=0;)
@@ -138,6 +152,15 @@ public class Register extends Activity
 			}
 		}
 		return true;
+	}
+	
+	//使编辑框重获焦点
+	public void GetFoucus(EditText et)
+	{
+		et.setFocusable(true);
+		et.setFocusableInTouchMode(true);
+		et.requestFocus();
+		et.findFocus();
 	}
 
 }
