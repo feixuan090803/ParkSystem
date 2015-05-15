@@ -28,7 +28,45 @@
 	<string name="park_num">泊位编号</string>
 	<string name="park_label">应付停车费：\t\t\t\t\t\t\t\t余额:</string>
 	
+	<string name="book_time">您预订的停车时间为：</string>
+	
 	<string name="find_label_telconfirm">该手机号是您注册时填写的手机号码，用于确认您的身份,保障账户安全</string>
 	<string name="label_spacing">\t\t\t\t\t\t\t\t\t\t\t\t></string>
 	
+	   <string name="messageremind">消息提醒</string>
+    <string name="alarmset">闹钟设置</string>
+    <string name="fontsize">字号大小</string>
+    <string name="detectionupdates">检测更新</string>
+    <string name="languageset">语言设置</string>
+    <string name="enableclock">启用闹钟</string>
+    <string name="remindtime">提醒时间</string>
+    <string name="bell">铃声</string>
+    <string name="vibration">震动</string>
+    <string name="repert">重复</string>
+    <string name="help">"热点问题:
+
+
+忘记密码
+账号被盗
+绑定建设银行卡号
+手机丢失， 无法接受验证码
+
+Q:忘记密码后如何处理?
+A:首先....
+
+
+常见问题分类
+
+下载安装
+注册登录
+充值缴费
+账号安全"</string>
+    <string name="changeloginpassword">修改登录密码</string>
+    <string name="modifypayment">修改支付密码</string>
+    <string name="retrievepayment">找回支付密码</string>
+    <string name="quit_app">确定要退出登录？</string>
+    <string name="complaint_tips">为了保证投诉内容的有效性，投诉内容请包含正确的:车牌号、停车泊位号、停车时间(限制在100字内)</string>
+    <string name="charge_bank_tip">暂时仅支持中国建设银行</string>
+    <string name="cacel_band_card">若您需要解除银行卡绑定，请直接点击该银行卡</string>
+    
 </resources>

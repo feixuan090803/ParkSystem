@@ -1,4 +1,35 @@
 <resources>
     <color name="black_overlay">#66000000</color>
 	<color name="red">#e74c3c</color>
+	
+	
+	<color name="dark">#ff222222</color>
+    <color name="light">#ffeeeeee</color>
+    <color name="black">#ff000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="mid_night_blue">#ff64a909</color>
+    <color name="background">#fff1f1f1</color>
+    <color name="gray">#ffbfbfbf</color>
+ 
+    <color name="dimgray">#ff696969</color>
+    <color name="transparent">#00000000</color>
+    <color name="blue">#ff37a0fc</color>
+    <color name="list_green">#ff89cc74</color>
+    <color name="big_title">#ff333333</color>
+    <color name="small_title">#ff999999</color>
+    <color name="content">#ff666666</color>
+    <color name="tab_color">#fff8f8f8</color>
+    <color name="textbg_color">#fff35050</color>
+    <color name="top_color">#ff23ba91</color>
+    <color name="text_color_green_deep">#ff23ba91</color>
+    <color name="text_color_green">#ff62ccb0</color>
+    <color name="text_color_dimgray">#ff6f7278</color>
+    <color name="text_color_gay">#ffa3a8ac</color>
+    <color name="text_color_black_deep">#ff353941</color>
+    <color name="text_color_black">#ff9ca0a8</color>
+    <color name="popup_color_black">#ffe6e6e6</color>
+    <color name="transparent_black">#30000000</color>
+    <color name="text_color_orange">#ffef7c46</color>
+    <color name="bggrey">#fff5f5f5</color>
+	
 </resources>

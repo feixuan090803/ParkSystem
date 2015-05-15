@@ -1,6 +1,9 @@
 package com.example.parksystem;
 
+import android.R.integer;
 import android.app.Activity;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.content.Intent;
 
 import android.os.Bundle;
@@ -48,6 +51,8 @@ public class Main extends FragmentActivity
         initView();
     }
     
+    
+    
     /**
      * 初始化组件
      */
@@ -71,6 +76,7 @@ public class Main extends FragmentActivity
             // 设置Tab按钮的背景
             mTabHost.getTabWidget().getChildAt(i).setBackgroundResource(R.drawable.divider_color);
         }
+        
     }
     
     /**

@@ -3,7 +3,7 @@
 	android:orientation="vertical"
 	android:layout_width="fill_parent"
 	android:layout_height="fill_parent"
-	android:background="@drawable/background_title"  
+	android:background="#fff2f2f2"  
 	>
 	
      <TextView
@@ -22,8 +22,9 @@
         android:id="@+id/mylist"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-     	android:background="@drawable/background_white"
+     	android:background="#fff2f2f2"
      	android:dividerHeight="1dp"
+   
      	
     />
 

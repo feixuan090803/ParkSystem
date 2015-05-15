@@ -20,7 +20,7 @@ public class FindPwd extends Activity{
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
-        setContentView(R.layout.findpwd);
+        setContentView(R.layout.tofindpwd);
         
         //绑定手机验证按钮
         btnConfirmNum=(Button)findViewById(R.id.find_confirm_num);

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/background_title" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <Button android:id="@id/back_btn" android:background="@drawable/title_btn_selector" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/text_large" android:textColor="@color/white" android:id="@id/head_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="首页" android:maxLength="12" android:layout_centerInParent="true" />
+        <ImageButton android:textSize="@dimen/text_content" android:textColor="@color/white" android:id="@id/head_btn" android:background="@color/transparent" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/complaincommit_n" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageButton android:textSize="@dimen/text_content" android:textColor="@color/white" android:id="@id/head_list_btn" android:background="@color/transparent" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/head_list_bg" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

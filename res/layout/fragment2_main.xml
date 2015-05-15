@@ -16,5 +16,87 @@
         android:textColor="@color/black_overlay"
         android:textSize="@dimen/label_font_size" />
     
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
     
+    <LinearLayout 
+        android:gravity="center_vertical" 
+        android:layout_gravity="bottom" 
+        android:orientation="horizontal" 
+        android:id="@id/main_radio" 
+        android:background="@color/background" 
+        android:layout_width="fill_parent" 
+        android:layout_height="40.0dip">
+        
+        <CheckBox 
+            android:textSize="@dimen/text_content" 
+            android:id="@id/radio_button0" 
+            android:tag="radio_button0" 
+            android:background="@drawable/transparent_light_holo" 
+            android:checked="true" 
+            android:text="按片区" 
+            style="@style/radio_btn_style" />
+        
+        <View 
+            android:background="@drawable/ic_filter_divider" 
+            android:layout_width="1.0dip" 
+            android:layout_height="fill_parent" />
+        
+        <CheckBox 
+            android:textSize="@dimen/text_content" 
+            android:id="@id/trade_button" 
+            android:tag="radio_button1"
+            android:background="@drawable/transparent_light_holo" 
+            android:checked="true" 
+            android:text="按商圈" 
+            style="@style/radio_btn_style" />
+        
+        <View 
+            android:background="@drawable/ic_filter_divider" 
+            android:layout_width="1.0dip" 
+            android:layout_height="fill_parent" />
+        <CheckBox android:textSize="@dimen/text_content" android:id="@id/radio_button1" android:tag="radio_button1" android:background="@drawable/transparent_light_holo" android:checked="true" android:text="按距离" style="@style/radio_btn_style" />
+    </LinearLayout>
+    
+    <ImageView 
+        android:id="@id/view_line" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:src="@drawable/register_line" 
+        android:layout_below="@id/main_radio" />
+    
+    <Button 
+        android:textColor="#ff000000" 
+        android:id="@id/button1" 
+        android:background="@drawable/location_bg" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="10.0dip" 
+        android:layout_marginBottom="10.0dip" 
+        android:layout_above="@id/map_localtion" 
+        android:layout_alignParentLeft="true" />
+    
+    <TextView 
+        android:textColor="#f0000000" 
+        android:id="@id/map_localtion" 
+        android:background="@drawable/local_tx_bg" 
+        android:padding="5.0dip" 
+        android:visibility="invisible" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_alignParentBottom="true" 
+        android:layout_centerHorizontal="true" />
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@id/view_line"
+        android:clickable="true" >
+
+    </com.baidu.mapapi.map.MapView>
+
+</RelativeLayout>
 </LinearLayout>
+

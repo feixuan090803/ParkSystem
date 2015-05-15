@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="8"
+        android:minSdkVersion="11"
         android:targetSdkVersion="18" />
 
     <application
@@ -13,6 +13,22 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@android:style/Theme.NoTitleBar" >
+        
+        <meta-data  
+        android:name="com.baidu.lbsapi.API_KEY"  
+        android:value="CVs8PoW5ZmgtpkBn29usdevA" />  
+        
+        
+	    <service
+	          android:name="com.baidu.location.f"
+	          android:enabled="true"
+	          android:process=":remote" >
+	          <intent-filter>
+	              <action android:name="com.baidu.location.service_v2.2" >
+	              </action>
+	          </intent-filter>
+	      </service>
+        
         <activity
             android:name=".LoginActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
@@ -45,6 +61,61 @@
 		 <activity android:name=".ToParkCar"
 				   android:label="@string/app_name" >
 		 </activity>
+		 
+		 <!-- 停车预订 界面 -->
+		 <activity android:name=".ToBookPark"
+				   android:label="@string/app_name" >
+		 </activity>
+		 
+		 
+		  <!-- 账户安全 界面 -->
+		 <activity android:name=".ToAccountSafe"
+				   android:label="@string/app_name" >
+		 </activity>
+		 
+		 <!-- 我的钱包 界面 -->
+		 <activity android:name=".ToMyWallet"
+				   android:label="@string/app_name" >
+		 </activity>
+		 
+		 <!--提醒设置界面 -->
+		 <activity android:name=".ToAlarm"
+				   android:label="@string/app_name" >
+		 </activity>
+		 
+		  <!--离线地图界面 -->
+		 <activity android:name=".ToOffline"
+				   android:label="@string/app_name" >
+		 </activity>
+		 
+		   <!--操作指南界面 -->
+		 <activity android:name=".ToInduct"
+				   android:label="@string/app_name" >
+		 </activity>
+		 
+		  <!--关于我们界面 -->
+		 <activity android:name=".ToAboutUs"
+				   android:label="@string/app_name" >
+		 </activity>
+		 
+		 
     </application>
 
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    
+    
+    
 </manifest>

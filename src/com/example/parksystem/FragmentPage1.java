@@ -75,7 +75,10 @@ public class FragmentPage1 extends Fragment
 					
 					break;
 				case 1:
-					DialogUtil.showDialog(getActivity(), "点击了第"+(position+1)+"个条目", false);
+			
+					Intent book_park=new Intent(getActivity(),ToBookPark.class);
+					startActivity(book_park);
+					
 					break;
 				case 2:
 					DialogUtil.showDialog(getActivity(), "点击了第"+(position+1)+"个条目", false);

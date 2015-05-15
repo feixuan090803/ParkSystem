@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    
+	<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="38dp"
+        android:background="@drawable/background_title"
+        android:orientation="horizontal" >
+    
+		<TextView
+		    android:id="@+id/title_return"
+		    android:layout_width="36dp"
+		    android:layout_height="38dp"
+		    android:background="@drawable/background_title"
+		    android:gravity="center"
+		    android:text="  &lt;  " />
+	    
+		<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="38dp"
+		    android:gravity="right" >
+
+		    <TextView
+		        android:id="@+id/title"
+		        android:layout_width="match_parent"
+		        android:layout_height="38dp"
+		        android:background="@drawable/background_title"
+		        android:gravity="center"
+		        android:text="提醒设置"
+		        android:textSize="15dp" 
+		        android:textColor="@color/white"
+		     />
+		</LinearLayout>
+    </LinearLayout>
+    
+    <RelativeLayout android:id="@id/EnableClock" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="5.0dip">
+        <TextView android:textSize="@dimen/text_middle" android:textColor="@color/text_color_black_deep" android:id="@id/EnableClockTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/enableclock" android:layout_centerVertical="true" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:src="@drawable/arrow_black" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        
+        <com.example.parksystem.CheckSwitchButton
+             android:id="@id/ClockSwitch"
+             android:clickable="true" 
+             android:layout_width="30.0dip"
+             android:layout_height="15.0dip" 
+             android:layout_alignParentRight="true" 
+             android:layout_centerVertical="true" 
+             android:enabled="true"
+             />
+        
+    </RelativeLayout>
+    <RelativeLayout android:background="@drawable/register_line" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/RemindTime" android:background="@drawable/user_set_selector" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="@dimen/text_middle" android:textColor="@color/text_color_black_deep" android:id="@id/RemindTimeTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/remindtime" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/arrorleft" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:src="@drawable/arrow_noselect" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/text_low" android:textColor="@color/text_color_black_deep" android:id="@id/ReodeTimeTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="最后30分钟" android:layout_toLeftOf="@id/arrorleft" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:background="@drawable/register_line" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/Bell" android:background="@drawable/user_set_selector" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="@dimen/text_middle" android:textColor="@color/text_color_black_deep" android:id="@id/BellTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/bell" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/arrorleft" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:src="@drawable/arrow_noselect" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/text_low" android:textColor="@color/text_color_black_deep" android:id="@id/bellDisplayTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="经典" android:layout_toLeftOf="@id/arrorleft" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:background="@drawable/register_line" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/Vibration" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="@dimen/text_middle" android:textColor="@color/text_color_black_deep" android:id="@id/VibrationTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/vibration" android:layout_centerVertical="true" />
+        <com.example.parksystem.CheckSwitchButton android:id="@id/ShockSwitch" android:clickable="true" android:layout_width="30.0dip" android:layout_height="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:background="@drawable/register_line" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/Repert" android:background="@drawable/user_set_selector" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="@dimen/text_middle" android:textColor="@color/text_color_black_deep" android:id="@id/RepertTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/repert" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/arrorleft" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:src="@drawable/arrow_noselect" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/text_low" android:textColor="@color/text_color_black_deep" android:id="@id/RepertTillTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="永不" android:layout_toLeftOf="@id/arrorleft" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:background="@drawable/register_line" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>
+
+   
+

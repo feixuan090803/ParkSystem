@@ -136,9 +136,6 @@ public class ToParkCar extends Activity
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				Intent intent=new Intent(ToParkCar.this,Main.class);
-				startActivity(intent);
-				
 				finish();
 			}
 		});

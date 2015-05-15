@@ -22,7 +22,7 @@ public class Register extends Activity
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
-        setContentView(R.layout.register);
+        setContentView(R.layout.toregister);
         
         //绑定手机验证按钮
         btnConfirmNum=(Button)findViewById(R.id.receive_confirm_num);

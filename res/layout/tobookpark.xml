@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="38dp"
+        android:background="@drawable/background_title"
+        android:orientation="horizontal" >
+    
+		<TextView
+		    android:id="@+id/title_return"
+		    android:layout_width="36dp"
+		    android:layout_height="38dp"
+		    android:background="@drawable/background_title"
+		    android:gravity="center"
+		    android:text="  &lt;  " />
+	    
+		<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="38dp"
+		    android:gravity="right" >
+
+		    <TextView
+		        android:id="@+id/title"
+		        android:layout_width="match_parent"
+		        android:layout_height="38dp"
+		        android:background="@drawable/background_title"
+		        android:gravity="center"
+		        android:text="次日续时"
+		        android:textSize="15dp" 
+		        android:textColor="@color/white"
+		     />
+		</LinearLayout>
+
+    </LinearLayout>
+    
+    <!-- 泊位编号 -->
+
+    <TextView
+        android:id="@+id/reg_username_label"
+        style="@style/normalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/park_num" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_white"
+        android:orientation="horizontal" >
+
+        
+	    <EditText
+	        android:id="@+id/booknum_1"
+	        android:layout_width="@dimen/parknum_edit_size"
+	        android:layout_height="wrap_content"
+	        android:maxLength="1"
+			android:inputType="number"
+	        android:layout_marginLeft="30dp"
+	        android:gravity="center" >
+	        <requestFocus />
+	      </EditText>
+	
+	    <EditText
+	        android:id="@+id/booknum_2"
+	        android:layout_width="@dimen/parknum_edit_size"
+	        android:layout_height="wrap_content"
+	        android:maxLength="1"
+			android:inputType="number"
+			android:gravity="center"/>
+	
+	    <EditText
+	        android:id="@+id/booknum_3"
+	        android:layout_width="@dimen/parknum_edit_size"
+	        android:layout_height="wrap_content"
+	        android:maxLength="1"
+	        android:inputType="number"
+	        android:gravity="center" />
+	
+	    <EditText
+	        android:id="@+id/booknum_4"
+	        android:layout_width="@dimen/parknum_edit_size"
+	        android:layout_height="wrap_content"
+	        android:maxLength="1"
+	        android:inputType="number"
+	        android:gravity="center" />
+	
+	    <EditText
+	        android:id="@+id/booknum_5"
+	        android:layout_width="@dimen/parknum_edit_size"
+	        android:layout_height="wrap_content"
+	        android:maxLength="1"
+	        android:inputType="number"
+	        android:gravity="center" />
+	
+	    <EditText
+	        android:id="@+id/booknum_6"
+	        android:layout_width="@dimen/parknum_edit_size"
+	        android:layout_height="wrap_content"
+	        android:maxLength="1"
+	        android:inputType="number"
+	        android:gravity="center" />
+
+	</LinearLayout>
+    
+
+
+    <!-- 预订时长 text -->
+
+    <TextView
+        android:id="@+id/book_time_label"
+        style="@style/normalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/park_time" />
+
+    <RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ecf0f1" 
+    android:layout_gravity="center"
+    android:layout_marginTop="20dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#ffffff" >
+		
+        <com.example.parksystem.PickerView
+            android:id="@+id/hour_pv"
+            android:layout_width="90dp"
+            android:layout_height="90dp" />
+
+        <TextView
+            android:id="@+id/hour_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/hour_pv"
+            android:text="小时"
+            android:textColor="#ffaa33"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <com.example.parksystem.PickerView
+            android:id="@+id/minute_pv"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_toRightOf="@id/hour_tv" />
+
+        <TextView
+            android:id="@+id/minute_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/minute_pv"
+            android:text="分钟"
+            android:textColor="#ffaa33"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout> 
+    
+    <TextView
+        android:id="@+id/book_time_label2"
+        style="@style/normalText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+         android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/book_time" />
+
+    <TextView
+        android:id="@+id/book_time_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:textColor="#e74c3c"
+        android:textSize="18sp"/>
+    
+      
+    <TextView
+        android:id="@+id/book_pay_label"
+        style="@style/normalText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+         android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/park_label" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="38dp"
+        android:orientation="horizontal" >
+	    <TextView
+	        android:id="@+id/book_to_pay"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="35dp"
+	        android:text="0.00 元" 
+	        android:textColor="#e74c3c"
+	        android:textSize="18sp"
+	        />
+	
+	    <TextView
+	        android:id="@+id/book_to_leave"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="right"
+	        android:layout_marginRight="50dp"
+	        android:text="0.00 元"
+	        android:textSize="15sp" />
+
+	</LinearLayout>
+
+    <Button
+        android:id="@+id/book_confirm"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="259dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/background_title"
+        android:gravity="center"
+        android:text="确认" />
+    
+</LinearLayout>
